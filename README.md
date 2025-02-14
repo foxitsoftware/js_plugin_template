@@ -1,3 +1,37 @@
-## template Starter vue3
+# template Starter vue3
+The template-vue3-Starter is a simple example. In this example, it demonstrates the basic operation of adding a text object to a PDF page. Additionally, it covers handling responses to events before the document is opened, after it is opened, and after it is activated.
 
-Starter 提供了一个代表性的最小单元示例。在此示例中，演示了如何将文本对象添加到 PDF 页面的基础操作。此外，还涵盖了对文档打开前、打开后以及激活后事件的响应处理。
+
+
+## Available Scripts
+
+In the project directory, you can run:
+
+### develop
+```
+npm install
+npm run dev
+```
+
+Runs the app in the development mode
+Open [http://0.0.0.0:5173]
+
+The page will reload if you make edits.
+You will also see any lint errors in the console.
+
+
+### build 
+```
+npm run build
+```
+
+Builds the app for production to the `dist` folder.
+
+
+
+### build zip file
+```
+npm run packagelocal
+```
+generates a distributable ZIP file in the same directory.
+
