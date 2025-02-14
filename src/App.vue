@@ -14,55 +14,49 @@ const app = ref({})
 
 
 let docEventCallbacks = {
-  "FRDocWillOpen": function (clientData,doc) {
+  "onWillOpen": function (clientData,doc) {
     console.log("onDocWillOpen", clientData,doc);
     msgLog.value += 'receive: onDocWillOpen <br />'
   },
-  "FRDocDidOpen": function (clientData,doc) {
+  "onDidOpen": function (clientData,doc) {
     console.log("onDocDidOpen", doc);
     msgLog.value += 'receive: onDocDidOpen<br />'
   },
-  "FRDocOnActivate": function (clientData,doc) {
+  "onActivate": function (clientData,doc) {
     console.log("onDocActivate", doc);
     msgLog.value += 'receive: onDocActivate<br />'
   },
-  "FRDocOnDeactivate": function (clientData,doc) {
+  "onDeactivate": function (clientData,doc) {
     console.log("onDocDeactivate", doc);
   },
-  "FRDocOnOtherDocActivated": function (clientData) {
-    console.log("onOtherDocActivated", doc);
-  },
-  "FRDocOnOtherDocDeactivated": function (clientData) {
-    console.log("onOtherDocDeactivated", doc);
-  },
-  "FRDocWillClose": function (clientData,doc) {
+  "onWillClose": function (clientData,doc) {
     console.log("onWillClose", doc);
   },
-  "FRDocDidClose": function (clientData,doc) {
+  "onDidClose": function (clientData,doc) {
     console.log("onDidClose", doc);
   },
-  "FRDocWillSave": function (clientData,doc,bSaveAs) {
+  "onWillSave": function (clientData,doc,bSaveAs) {
     console.log("onWillSave", doc, bSaveAs);
   },
-  "FRDocDidSave": function (clientData,doc,bSaveAs) {
+  "onDidSave": function (clientData,doc,bSaveAs) {
     console.log("onDidSave", doc, bSaveAs);
   },
-  "FRDocWillPrint": function (clientData,doc) {
+  "onWillPrint": function (clientData,doc) {
     console.log("onWillPrint", doc);
   },
-  "FRDocDidPrint": function (clientData,doc) {
+  "onDidPrint": function (clientData,doc) {
     console.log("onDidPrint", doc);
   },
-  "FRDocOnAnnotSelectionChanged": function (clientData) {
+  "onAnnotSelectionChanged": function (clientData) {
     console.log("onAnnotSelectionChanged", doc);
   },
-  "FRDocOnAnnotSetFocus": function (clientData,doc,focusAnnot) {
+  "onAnnotSetFocus": function (clientData,doc,focusAnnot) {
     console.log("onAnnotSetFocus", doc);
   },
-  "FRDocOnAnnotKillFocus": function (clientData,doc,focusAnnot) {
+  "onAnnotKillFocus": function (clientData,doc,focusAnnot) {
     console.log("onAnnotKillFocus", doc);
   },
-  "FRDocOnWillDShowFloatyBar": function (clientData,doc,bsCurToolhandleName,pAryBeShowBtnName) {
+  "onWillDShowFloatyBar": function (clientData,doc,bsCurToolhandleName,pAryBeShowBtnName) {
     console.log("onWillDShowFloatyBar", doc,bsCurToolhandleName,pAryBeShowBtnName);
   }
 };
