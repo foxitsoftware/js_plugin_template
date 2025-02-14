@@ -1,1 +1,3 @@
-## js plugin sdk sample
+## template Starter vue3
+
+Starter 提供了一个代表性的最小单元示例。在此示例中，演示了如何将文本对象添加到 PDF 页面的基础操作。此外，还涵盖了对文档打开前、打开后以及激活后事件的响应处理。
