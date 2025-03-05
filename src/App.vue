@@ -3,7 +3,7 @@
 import {onMounted, ref} from "vue";
 import {
   App as PluginApp, ColorSpace, ColorState, Doc, Page, PDFArray, PDFDictionary, PDFString, TextObject, TextState,
-} from "./lib/foxit.esm.min.js"
+} from 'fx-jspluginsdk';
 
 
 const title = ref('')

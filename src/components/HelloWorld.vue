@@ -3,7 +3,7 @@ import {onMounted, ref} from 'vue'
 
 import {
   App as PluginApp
-} from "../lib/foxit.esm.min.js"
+} from 'fx-jspluginsdk';
 defineProps({
   msg: String,
 })
